@@ -6,7 +6,9 @@ import 'react-styled-navbar/dist/index.css'
 const App = () => {
 
   return (
-    <Navbar navbarData showNavbarContent navbarContent></Navbar>
+    <Navbar text='hello'>
+      
+    </Navbar>
   )
 }
 

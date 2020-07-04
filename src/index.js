@@ -1,28 +1,30 @@
 import React, {  useState } from 'react'
 // import styles from './styles.module.css'
+import styled from 'styled-components'
 
-const Navbar = () => {
+export const Navbar = ({ text }) => {
   const [navbarContent, setNavbarContent] = useState()
   
 
   const navbarData = [
     {
       name: 'Navbar',
-      route: '/',
-      items: [
-        {
-          name: 'items1',
-          route: '/'
-        },
-        {
-          name: 'items2',
-          route: '/'
-        },
-        {
-          name: 'items3',
-          route: '/'
-        }
-      ]
+      url: '/',
+    }
+  ]
+
+  const items = [
+    {
+      name: 'items1',
+      url: '/'
+    },
+    {
+      name: 'items2',
+      url: '/'
+    },
+    {
+      name: 'items3',
+      url: '/'
     }
   ]
 
@@ -35,12 +37,13 @@ const Navbar = () => {
   }
 
   return (
-    <Navbar
-      navbarData={navbarData}
-      navbarContent={navbarContent}
-      showNavbarContent={showNavbarContent}
-    />
+   <StyledDiv>
+     {text}
+   </StyledDiv>
   )
 }
 
-export default Navbar
+const StyledDiv = styled.div`
+  color: red
+`
+
