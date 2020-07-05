@@ -8,6 +8,10 @@
 
 ```bash
 npm install --save react-styled-navbar
+
+or
+
+yarn add react-styled-navbar
 ```
 
 ## Usage
